@@ -1,3 +1,5 @@
+
+
 /* 1. VARIABLES DE DISEÑO */
 :root {
   --primary-color: #c519db;
@@ -18,6 +20,44 @@ body {
 }
 
 /* 3. NAVBAR */
+/* CSS */
+.top-bar {
+  background: linear-gradient(90deg, #6e00ff, #b775fd); /* Degradado violeta */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar p {
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.highlight {
+  color: #ffffff; /* rosa */
+  font-weight: 600;
+}
+
+.button {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ff87c1; /* rosa */
+  color: white;
+}
+
 .navbar {
   background-color: transparent;
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -25,7 +65,7 @@ body {
 }
 
 .navbar.scrolled {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -47,6 +87,55 @@ body {
 }
 
 /* 4. HERO */
+/* Fuente general: usar una tipografía fina */
+body {
+  font-family: 'Montserrat', sans-serif; /* O Roboto, o alguna que tengas */
+  background-color: #000000; /* Fondo negro */
+  color: rgba(255, 255, 255, 0.7); /* Blanco con opacidad para textos normales */
+}
+
+/* Texto grande y fino (NO negrita) */
+.titulo-fino {
+  font-weight: 300; /* Light */
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+/* Texto grande y negrita con glow */
+.titulo-grande {
+  font-weight: 7d00;
+  font-size: 4.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #9b59b6, 0 0 20px #8e44ad;
+  letter-spacing: 2px;
+}
+
+/* Texto más pequeño y opaco */
+.subtitulo {
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+}
+
+/* Botón degradado */
+.boton-morado {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.boton-morado:hover {
+  background: linear-gradient(90deg, #f107a3, #7b2ff7);
+}
 .row.p-5 {
   min-height: 90vh;
   display: flex;
@@ -71,6 +160,29 @@ p {
 }
 
 /* Botones */
+.custom-button {
+      display: inline-block;
+      padding: 15px 40px;
+      background: linear-gradient(90deg, #6e00ff, #b775fd); /* Degradado violeta */
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-size: 18px;
+      clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .custom-button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #7c00ff, #a55ef1); /* Degradado un poco más brillante al hacer hover */
+      color: rgb(0, 0, 0);
+    }
+
 .btn {
   border-radius: 50px;
   padding: 10px 30px;
@@ -98,6 +210,9 @@ p {
 }
 
 /* 5. SECCIONES */
+
+
+
 section {
   padding: 100px 0;
 }
@@ -119,11 +234,58 @@ section h2::after {
 
 /* 6. CARDS */
 .card {
-  border: none;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s;
+  width: 400px;
+  height: 600px;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  /* ▲ Eso hace solo la parte de arriba inclinada */
+
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+  /* Quitamos el border-radius para que los bordes sean puntiagudos */
+  border-radius: 0;
+}
+/* Fondos diferentes */
+
+.card-1 {
+  width: 400px;
+  height: 600px;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  /* ▲ Eso hace solo la parte de arriba inclinada */
+
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #f77072, #fa4343); /* rojo-anaranjado */
+}
+
+.card-2 {
+  width: 400px;
+  height: 600px;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  /* ▲ Eso hace solo la parte de arriba inclinada */
+
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(160deg, #3dc3f8, #6026ff); /* celeste-violeta */
+}
+
+.card-3 {
+  width: 400px;
+  height: 600px;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  /* ▲ Eso hace solo la parte de arriba inclinada */
+
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(180deg, #ff40ef, #c809ee); /* naranja-rosado */
 }
 
 .card:hover {
@@ -175,10 +337,112 @@ form button.btn-primary {
 }
 
 /* 9. FOOTER */
-footer {
-  background-color: var(--dark-color);
-  color: #8a116b;
-  font-size: 0.9rem;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  color: white;
+  padding: 40px 60px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column.newsletter h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column.newsletter form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer-column.newsletter input[type="email"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.footer-column.newsletter button {
+  padding: 8px 16px;
+  border: none;
+  background-color: white;
+  color: #7b2ff7;
+  border-radius: 0 4px 4px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.footer-column.newsletter p {
+  font-size: 12px;
+  color: #eee;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 12px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.payment-info {
+  font-size: 11px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
 
 /* 10. IMÁGENES */
@@ -283,9 +547,16 @@ img.rounded-circle {
 }
 
 /* ESPACIADOS */
-.section-spacing {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.section-spacing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0a0a0a, #1a0f23);
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+  z-index: -1; /* Envía el fondo detrás del contenido */
 }
 
 .section-spacing-sm {
