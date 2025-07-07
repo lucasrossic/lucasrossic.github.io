@@ -132,14 +132,14 @@ body {
 body {
   font-family: 'Montserrat', sans-serif; /* O Roboto, o alguna que tengas */
   background-color: #000000; /* Fondo negro */
-  color: rgba(255, 255, 255, 0.7); /* Blanco con opacidad para textos normales */
+  color: rgb(255, 255, 255); /* Blanco con opacidad para textos normales */
 }
 
 /* Texto grande y fino (NO negrita) */
 .titulo-fino {
-  font-weight: 300; /* Light */
-  font-size: 3rem;
-  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100; /* Light */
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
   letter-spacing: 1px;
 }
 
@@ -148,7 +148,7 @@ body {
   font-weight: 7d00;
   font-size: 4.5rem;
   color: #fff;
-  text-shadow: 0 0 10px #9b59b6, 0 0 20px #8e44ad;
+  text-shadow: 0 0 10px #ffffff;
   letter-spacing: 2px;
 }
 
@@ -156,7 +156,7 @@ body {
 .subtitulo {
   font-weight: 300;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.829);
   margin-top: 10px;
 }
 
@@ -300,7 +300,7 @@ section h2::after {
   color: white;
   font-family: sans-serif;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(90deg, #f77072, #fa4343); /* rojo-anaranjado */
+  background: linear-gradient(90deg, #610404, #fd5757); /* rojo-anaranjado */
 }
 
 .card-2 {
@@ -313,7 +313,7 @@ section h2::after {
   color: white;
   font-family: sans-serif;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(160deg, #3dc3f8, #6026ff); /* celeste-violeta */
+  background: linear-gradient(160deg, #0ca4e0, #300b97); /* celeste-violeta */
 }
 
 .card-3 {
@@ -326,7 +326,7 @@ section h2::after {
   color: white;
   font-family: sans-serif;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(180deg, #ff40ef, #c809ee); /* naranja-rosado */
+  background: linear-gradient(180deg, #da0cc8, #790591); /* naranja-rosado */
 }
 
 .card:hover {
@@ -494,6 +494,7 @@ img.rounded-circle {
 /* 11. GALERÍA */
 .container .row img {
   transition: transform 0.3s, box-shadow 0.3s;
+  shadow: 0 0 10px #ffffff;
 }
 
 .container .row img:hover {
