@@ -494,7 +494,6 @@ img.rounded-circle {
 /* 11. GALERÍA */
 .container .row img {
   transition: transform 0.3s, box-shadow 0.3s;
-  shadow: 0 0 10px #ffffff;
 }
 
 .container .row img:hover {
