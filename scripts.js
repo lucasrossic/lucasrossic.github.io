@@ -1,5 +1,10 @@
-// Cambiar navbar al hacer scroll
-window.addEventListener('scroll', function() {
+// Oculta la top-bar y hace que la navbar suba suavemente al hacer scroll
+window.addEventListener('scroll', function () {
   const navbar = document.querySelector('.navbar');
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  const topBar = document.querySelector('.top-bar');
+
+  const hasScrolled = window.scrollY > 50;
+
+  topBar.classList.toggle('hidden', hasScrolled);
+  navbar.classList.toggle('scrolled', hasScrolled);
 });

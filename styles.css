@@ -21,14 +21,41 @@ body {
 
 /* 3. NAVBAR */
 /* CSS */
+/* ===== TOP-BAR ===== */
 .top-bar {
-  background: linear-gradient(90deg, #6e00ff, #b775fd); /* Degradado violeta */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, #6e00ff, #b775fd);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 15px;
   font-size: 12px;
   font-family: Arial, sans-serif;
+  z-index: 1000;
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.top-bar.hidden {
+  transform: translateY(-100%);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transform: translateY(30px); /* empieza debajo de la top-bar */
+  transition: transform 0.6s ease-in-out;
+}
+
+.navbar.scrolled {
+  transform: translateY(0); /* sube suavemente al lugar de la top-bar */
 }
 
 .top-bar p {
