@@ -19,6 +19,20 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Fondo de la web */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Asegura que cubra toda la pantalla */
+  background-image: url('Imagenes/Mesa\ de\ trabajo\ 1.png');
+  background-size: cover; /* La imagen cubre todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center; /* Centra la imagen */
+  background-attachment: fixed; /* Fija el fondo al hacer scroll */
+}
+
+
 /* 3. NAVBAR */
 /* CSS */
 /* ===== TOP-BAR ===== */
