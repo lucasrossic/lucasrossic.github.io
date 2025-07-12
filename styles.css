@@ -551,10 +551,46 @@ img.rounded-circle {
 }
 
 /* FONDOS E IMÁGENES */
+.imagen-grande {
+  width: 150%; /* o lo que necesites */
+  max-width: none; /* para que no se limite si estás usando Bootstrap */
+}
 .bg-cover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.glow-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.main-img {
+  position: relative;
+  z-index: 2;
+  width: 100%; /* o el tamaño que uses */
+}
+
+.contenedor-imagen {
+  position: relative;
+  display: inline-block;
+}
+
+.glow-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  filter: blur(50px);
+  opacity: 0.6;
+}
+
+.imagen-frontal {
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .bg-overlay-light {
