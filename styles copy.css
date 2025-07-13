@@ -8,6 +8,8 @@
 }
 
 /* 2. ESTILOS GENERALES */
+
+
 body {
   font-family: 'Michroma', sans-serif;; /* o tu variable si preferís */
   color: #ffffff;
@@ -19,11 +21,50 @@ body {
   overflow-y: auto;
   height: 100vh;
 
-  background-image: url('Imagenes/Mesa de trabajo 1.png');
+  background-image: url('Imagenes/Fondoestatico.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* ===== MARCAS ===== */
+.slider {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track{
+  display: flex;
+  gap: 105px;
+  animation: scroll 40s linear infinite;
+  -webkit-animation:scroll 40s linear infinite;
+  width:calc(245px * 16);
+}
+
+.slider.slide{
+  width: 150px;
+  flex-shrink: 0;
+  background-color: #ECECEC;
+}
+
+.slider .slide img {
+ height: 45px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-245px * 8)); /* Mover hacia la izquierda la mitad del ancho total para loop infinito */
+  }
 }
 
 /* ===== CONTENEDOR COMÚN ===== */
@@ -91,6 +132,23 @@ body {
   transition: color 0.3s;
 }
 
+.nav-link.active {
+  color: white !important;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; /* distancia desde el texto */
+  left: 0;
+  width: 100%;
+  height: 2px; /* grosor de la línea */
+  background-color: white; /* color de la línea */
+}
+
 .nav-link:hover {
   color: var(--primary-color);
 }
@@ -106,11 +164,12 @@ body {
 }
 
 .titulo-fino {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.8rem;      /* más grande, ajustalo según quieras */
+  font-weight: 50;       /* ultra light (si la fuente lo soporta) */
   color: var(--secondary-color);
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* o la que uses */
 }
 
 .titulo-grande {
@@ -204,6 +263,8 @@ p {
 }
 
 /* 5. SECCIONES */
+
+
 section {
   padding-top: 100px;
   padding-bottom: 60px;
@@ -220,16 +281,26 @@ section h2::after {
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--primary-color);
   margin: 20px auto 0;
 }
 
 /* 6. CARDS */
+
+.card-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 410px; /* antes estaba en 350px */
+  color: white;
+}
 .card {
+  background: transparent;
   border: none;
+  box-shadow: none;
   border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
   overflow: hidden;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
 }
 
@@ -258,6 +329,7 @@ section h2::after {
 .card-text {
   color: #ffffff;
 }
+
 
 /* 7. TESTIMONIOS */
 .blockquote {
@@ -444,6 +516,7 @@ img.rounded-circle {
 }
 
 /* PÁRRAFOS Y TEXTOS */
+
 .p-custom {
   font-size: 1rem;
   color: var(--secondary-color);
@@ -533,5 +606,20 @@ img.rounded-circle {
 @media screen and (max-width: 576px) {
   .masonry__container {
     column-count: 1;
+  }
+}
+
+h1 {
+  font-size: 4rem;            /* tamaño fijo para que no se achique antes de tiempo */
+  white-space: nowrap;        /* evita que el texto salte de línea solo */
+  line-height: 1.1;
+}
+
+/* Solo en pantallas chicas permití que se ajuste */
+@media (max-width: 576px) {
+  h1 {
+    white-space: normal;
+    font-size: 2.5rem;         /* más chico para móviles */
+    text-align: center;       /* opcional, por estética */
   }
 }
