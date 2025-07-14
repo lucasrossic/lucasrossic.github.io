@@ -263,7 +263,62 @@ p {
 }
 
 /* 5. SECCIONES */
+.reviews-carousel {
+  background-color: #0b0b1f;
+  padding: 50px 20px;
+  color: #fff;
+  text-align: center;
+  overflow-x: auto;
+}
 
+
+.reviews-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.review-card {
+  background-color: #1c1c2e;
+  border: 1px solid #3a3a5e;
+  border-radius: 15px;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 300px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #00ffb7;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.username {
+  color: #00bfff;
+  font-weight: bold;
+}
 
 section {
   padding-top: 100px;
@@ -341,7 +396,7 @@ section h2::after {
 
 /* 8. FORMULARIO */
 form .form-control {
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid #ced4da;
 }
 
@@ -353,7 +408,6 @@ form button.btn-primary {
   margin-top: 20px;
 }
 
-/* 9. FOOTER */
 /* 9. FOOTER */
 body {
   margin: 0;
@@ -563,7 +617,7 @@ img.rounded-circle {
 }
 
 .text-muted-custom {
-  color: #6c757d;
+  color: #ffffff;
 }
 
 /* ESPACIADOS */
@@ -577,6 +631,26 @@ img.rounded-circle {
   padding-bottom: 50px;
 }
 
+.faq-item {
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.8rem;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 0;
+  color:#ffffff;
+}
+
+.faq-answer {
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
+color:#ffffff;
+}
 
 /* ============================== */
 /* MEDIA QUERIES */
