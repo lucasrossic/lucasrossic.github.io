@@ -511,12 +511,12 @@ img.rounded-circle {
 
 /* 11. GALERÍA */
 .container .row img {
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0;
 }
 
 .container .row img:hover {
   transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: none
 }
 
 /* ============================== */
