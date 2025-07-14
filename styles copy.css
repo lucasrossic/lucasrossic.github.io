@@ -221,6 +221,11 @@ background-attachment: fixed;
   text-decoration: none;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* invierte el blanco al negro */
+}
+
 .custom-button.upper:hover {
   background: #57065a;
 }
@@ -306,13 +311,19 @@ p {
 .review-card {
   background-color: #1c1c2e;
   border: 1px solid #3a3a5e;
-  border-radius: 15px;
   padding: 20px;
   min-width: 250px;
   max-width: 300px;
   flex: 0 0 auto;
   scroll-snap-align: center;
   transition: transform 0.3s ease;
+
+  /* Forma irregular estilo cómic */
+  clip-path: polygon(
+    5% 0%, 15% 3%, 30% 0%, 50% 5%, 70% 0%, 85% 4%, 95% 0%,
+    100% 10%, 97% 50%, 100% 90%, 95% 100%, 75% 95%, 50% 100%,
+    25% 97%, 5% 100%, 0% 90%, 3% 50%, 0% 10%
+  );
 }
 
 .review-card:hover {
@@ -327,7 +338,7 @@ p {
 }
 
 .stars {
-  color: #00ffb7;
+  color: #fcfcfc;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
@@ -338,7 +349,7 @@ p {
 }
 
 .username {
-  color: #00bfff;
+  color: #ffffff;
   font-weight: bold;
 }
 
