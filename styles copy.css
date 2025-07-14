@@ -275,6 +275,14 @@ p {
       font-size: 18px;
 }
 
+.texto-gradiente {
+  background: linear-gradient(90deg, #6e00ff, #b775fd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .btn-dark:hover {
   background-color: #57065a;
 }
@@ -326,6 +334,23 @@ p {
   );
 }
 
+.masonry__item {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: block;
+  clip-path: polygon(
+    5% 0%, 15% 3%, 30% 0%, 50% 5%, 70% 0%, 85% 4%, 95% 0%,
+    100% 10%, 97% 50%, 100% 90%, 95% 100%, 75% 95%, 50% 100%,
+    25% 97%, 5% 100%, 0% 90%, 3% 50%, 0% 10%
+  );
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry__item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 .review-card:hover {
   transform: scale(1.05);
 }
@@ -370,6 +395,10 @@ section h2::after {
   width: 60px;
   height: 3px;
   margin: 20px auto 0;
+}
+
+#GeekSwap {
+  margin-top: 150px; /* ajusta el valor */
 }
 
 /* 6. CARDS */
