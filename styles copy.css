@@ -334,6 +334,30 @@ p {
   );
 }
 
+.fondo-compartido {
+  background-image: url('Imagenes/Fondonosotros.png'); /* tu imagen de fondo */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Opcional: para que las secciones no tapen el fondo */
+.clientes-section,
+.espaciadoLeft {
+  background-color: transparent;
+}
+
+/* Ajustes para que el texto sea visible sobre el fondo */
+.clientes-title,
+.clientes-subtitle,
+.unique-copy,
+.headline-unique {
+  color: white; /* o el color que mejor contraste */
+  text-shadow: 0 0 5px rgba(0,0,0,0.7); /* para mejor legibilidad */
+}
+
 .masonry__item {
   width: 100%;
   margin-bottom: 1rem;
