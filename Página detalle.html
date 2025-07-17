@@ -121,9 +121,33 @@
                   ITEM EXCLUSIVO
                 </li>
     </div>
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mt-4 mt-lg-0">
-      <img src="Media/Objeto.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    <!-- Columna de imagen con carrusel custom -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0" id="que-incluye-frikiplus">
+      <div class="position-relative">
+        <div id="carouselIncluye" class="carousel slide" data-bs-touch="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img alt="Figurín" class="d-block w-100" src="Media/Objeto.png" />
+            </div>
+            <div class="carousel-item">
+              <img alt="Peluche" class="d-block w-100" src="Media/Objeto2Objeto2.png" />
+            </div>
+            <div class="carousel-item">
+              <img alt="Llavero" class="d-block w-100" src="Media/Objeto3Objeto2.png" />
+            </div>
+            <!-- Agrega más .carousel-item según necesites -->
+          </div>
+        </div>
+        <!-- Controles de navegación -->
+        <button class="carousel-control-prev custom-carousel-control" type="button" data-bs-target="#carouselIncluye" data-bs-slide="prev">
+          <i class="bi bi-arrow-left-circle-fill"></i>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next custom-carousel-control" type="button" data-bs-target="#carouselIncluye" data-bs-slide="next">
+          <i class="bi bi-arrow-right-circle-fill"></i>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -563,7 +587,59 @@ window.addEventListener('scroll', function() {
       background-position: center center;
     }
   }
+
+  #que-incluye-frikiplus .custom-carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #fff;
+    z-index: 10;
+    transition: all 0.3s ease;
+    background: none;
+    border: none;
+  }
+  #que-incluye-frikiplus .carousel-control-prev {
+    left: -40px;
+  }
+  #que-incluye-frikiplus .carousel-control-next {
+    right: -40px;
+  }
+  @media (max-width: 768px) {
+    #que-incluye-frikiplus .carousel-control-prev {
+      left: 0px !important;
+    }
+    #que-incluye-frikiplus .carousel-control-next {
+      right: 0px !important;
+    }
+    #que-incluye-frikiplus .custom-carousel-control {
+      font-size: 2rem;
+      z-index: 20;
+    }
+    #que-incluye-frikiplus .custom-carousel-control i {
+      background-color: white;
+      border-radius: 50%;
+      padding: 2px;
+    }
+  }
+
+  #carouselIncluye .carousel-item {
+    transition: none !important;
+  }
 </style>
+
+<script>
+  // Imagenes para la sección detalle
+  const imagenesDetalle = [
+    "Media/Objeto.png",
+    "Media/Objeto2Objeto2.png",
+    "Media/Objeto3Objeto2.png"
+    // Agrega más rutas si tienes más imágenes
+  ];
+  function cambiarImagen(idx) {
+    document.getElementById('detalleImagen').src = imagenesDetalle[idx];
+  }
+</script>
 
 </body>
 </html>
