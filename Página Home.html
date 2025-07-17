@@ -65,9 +65,8 @@
     </div>
 
     <!-- HERO -->
-    <section id="Home" class="section-spacing" style="min-height: 90vh;
-      background-size: cover; /* para que ocupe todo el fondo */
-      background-position: center center; /* para centrar la imagen */">
+    <section id="Home" class="section-spacing hero-bg-opacity"
+      style="min-height: 90vh; padding-top: 120px; background-image: url('Media/fondoderBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
       <div class="container">
         <div class="row align-items-center">
 
@@ -391,7 +390,7 @@
 
           <!-- Columna derecha: texto y botones -->
           <div class="col-12 col-lg-6 text-center text-lg-start">
-            <p class="fw-semibold text-uppercase small mb-2 text-muted">
+            <p class="fw-semibold text-uppercase small mb-2">
               Exclusivo para miembros de FirkiCaja
             </p>
 
@@ -400,7 +399,7 @@
               intercambiá lo que te sobra y conseguí lo que te falta
             </h2>
 
-            <p class="mb-4 text-muted">
+            <p class="mb-4">
               GeekSwap es una funcionalidad exclusiva que te permite intercambiar repetidos con otros
               coleccionistas.</span><br />
               ¡Hacé crecer tu colección sin gastar de más! </p>
@@ -823,6 +822,30 @@
         min-height: 270px !important;
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;
+      }
+
+      /* Fondo del hero con transparencia usando pseudo-elemento */
+      .hero-bg-opacity {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-bg-opacity::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background-image: inherit;
+        background-size: inherit;
+        background-position: inherit;
+        background-repeat: inherit;
+        opacity: 0.07; /* Mucha más transparencia */
+        pointer-events: none;
+      }
+
+      .hero-bg-opacity > .container {
+        position: relative;
+        z-index: 1;
       }
     </style>
 
