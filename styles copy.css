@@ -477,9 +477,6 @@ p {
   position: relative;
   background-size: cover;
   background-position: center;
-  clip-path: polygon(
-    10% 10%, 90% 5%, 95% 40%, 85% 90%, 50% 85%, 15% 95%, 5% 55%
-  );
   border: 4px solid #111;
   height: 300px; /* ejemplo de altura */
   transition: transform 0.3s ease;
