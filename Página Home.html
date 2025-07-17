@@ -1,700 +1,820 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <!-- Configuración básica del documento -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla Visible - Belluccia 3</title>
-
-    <!-- Tipografía desde Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <!-- Framework CSS de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="styles copy.css">
-</head>
-<body>
-
-<div class="contenedor-principal">
-<!-- NAVBAR + TOPBAR envueltos en un solo contenedor -->
-<div class="topnav-wrapper">
-  
-  <!-- TOP-BAR -->
-  <div class="top-bar justify-content-center">
-    <p><span class="highlight"></p>Todavía tenés tiempo para conseguir ALTOS DESCUENTOS en las mejores planes</p>
-    <a href="#suscripciones" class="btn">Conseguilo! →</a>
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <!-- Logo o nombre del sitio -->
-      <a class="navbar-brand text-uppercase" href="#">Frikicaja</a>
-
-      <!-- Botón menú mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Ítems del menú -->
-      <div class="collapse navbar-collapse text-uppercase justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#comofunciona">Cómo funciona</a></li>
-          <li class="nav-item"><a class="nav-link" href="#suscripciones">Suscripciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          <a href="#suscripciones" class="custom-button upper"style="margin-left: 2rem;">Suscribirse</a>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<!-- HERO -->
-<section id="Home" class="section-spacing" style="min-height: 90vh; padding-top: 200px; background-image: url('Imagenes/FondoMesa\ de\ trabajo\ 1.png');
-      background-size: cover; /* para que ocupe todo el fondo */
-      background-position: center center; /* para centrar la imagen */">
-  <div class="container">
-    <div class="row align-items-center">
-    
-    <!-- Texto principal -->
-    <div class="col-lg-6 col-md-12 text-center text-lg-start hero-text">
-      <p class="titulo-fino">NO ES UNA CAJA</p>
-      <h1 class="titulo-grande">  ES TU PRÓXIMA<br><span class="texto-gradiente">
-  OBSESIÓN</span>
-      </h1>
-      <p class="inter">
-        Suscripción mensual con cómics edición variante,<br>
-        figuras exclusivas y merch oficial
-      </p>
-      <a href="#suscripciones" class="custom-button upper">¡Quiero mi caja!</a>
-    </div>
-
-    <!-- Imagen destacada -->
-    <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
-      <img src="Imagenes/cajahome.png" class="img-fluid img-rounded" alt="Imagen Hero">
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT: Sección sobre nosotros -->
-<section id="comofunciona" class="section-spacing container text-center"style="min-height: 100vh; padding-top: 90px; ">
-  <p class="h5">Lo principal</p>
-  <h2 class="titulo-grandenegro">¿Cómo funciona?</h2>
-  <div class="row">
-    <!-- Tres columnas informativas -->
-    <div class="col-md-3">
-      <img src="Imagenes/1Paso.png" alt="Miembro 1">
-      <h5 class="h5">Elegís tu plan</h5>
-      <p class="p-custom">¡Elegí tu plan y empezá tu colección!</p>
-    </div>
-    <div class="col-md-3">
-      <img src="Imagenes/2Paso.png" alt="Miembro 1">
-      <h4 class="h5">Armamos tu caja</h4>
-      <p class="p-custom">¡Seleccionamos tus próximos coleccionables exclusivos!</p>
-    </div>
-    <div class="col-md-3">
-      <img src="Imagenes/3Paso.png" alt="Miembro 1">
-      <h4 class="h5">Enviamos</h4>
-      <p class="p-custom">¡Cada mes empacamos tu caja y te la enviamos!</p>
-    </div>
-    <div class="col-md-3">
-      <img src="Imagenes/4Paso.png" alt="Miembro 1">
-      <h4 class="h5">Disfrutas</h4>
-      <p class="p-custom">Abrís. Flipás. Y ya estás esperando la próxima.</p>
-    </div>
-  </div>
-</section>
-<!-- /ABOUT -->
-
-<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="Imagenes/Porque elegirnosMesa de trabajo 1.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <p class="h5">Lo principal</p>
-      <h2 class="titulo-grandenegro">¿Por qué elegirnos?</h2>
-        <h4 class="h5-custom"></i>Porque sabés que te lo mereces</h4>
-      <p class="p-custom"><i class="bi bi-arrow-down-right-square"></i>       Cada caja está pensada para sorprender con lo mejor del mundo freaky. </p>
-        <h4 class="h5-custom">Ediciones exclusivas</h4>
-      <p class="p-custom"><i class="bi bi-arrow-down-right-square"></i>   Productos únicos, limitados y seleccionados especialmente para vos.</p>
-        <h4 class="h5-custom">¡Y con envío gratis!</h4>
-      <p class="p-custom"><i class="bi bi-arrow-down-right-square"></i> Te llega directo a tu puerta. Cero preocucccpaciones, solo emoción.</p>
-      <a href="#suscripciones" class="custom-button upper">¡Quiero mi caja!</a>
-    </div>
-  </div>
-</section>
-
-<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-<section id="suscripciones" class="section-spacing" style="min-height: 90vh; padding-top: 300px; background-image: url('Imagenes/Fondo 2Mesa de trabajo 1.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-  <div class="container">
-    <p class="mt-3 mb-3 text-center">Lo principal</p>
-    <h2 class="h2-custom text-center">Planes de Suscripción</h2>
-    <p class="mt-3 mb-3 text-center">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
-  
-    <div class="row mt-5">
-      <!-- Card: Plan Básico -->
-      <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 card-background" style="background-image: url('Imagenes/betafondo_.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
-          <h5 class="titulo-grande" style="margin-left: 30px;margin-top: 3rem; margin-bottom: -4rem;">Beta_</h5>
-          <img src="Imagenes/Beta.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
-          <!-- Lista de beneficios -->
-    <ul class="list-unstyled text-white fw-semibold" style="width: 90%; margin: auto; margin-top: -4rem; margin-bottom: 1rem;">
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        FIGURA SORPRESA
-      </li>
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        STICKER FRIKI
-      </li>
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        GOLOSINA TEMATICA
-      </li>
-      <li class="d-flex align-items-center mb-1 text-danger">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
-        POSTER
-      </li>
-      <li class="d-flex align-items-center mb-3 text-danger">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
-        ITEM EXCLUSIVO
-      </li>
-    </ul>
-
-    <!-- Precio -->
-    <p class="text-white fw-bold mb-2" style="margin-left: 30px;font-size: 1.25rem;">
-      $12.000 <span style="font-size: 0.85rem;">/MES</span>
-    </p>
-
-          <a href="Página detalle.html" style="margin-left: 30px;margin-bottom: 15rem;"class="custom-button upper w-50">Elegir plan</a>
-        </div>
-      </div>
-
-      <!-- Card: Plan Pro (Recomendado) -->
-      <div class="col-md-4 mb-4">
-         <div class="card p-4 h-100 card-background" style="background-image: url(Imagenes/alphafondo_.png); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
-          <h5 class="titulo-grande" style="margin-left: 30px;margin-top: 3rem; margin-bottom: -4rem;">Alpha_ </h5>
-          <img src="Imagenes/Alpha.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
-                    <!-- Lista de beneficios -->
-    <ul class="list-unstyled text-white fw-semibold" style="width: 90%; margin: auto; margin-top: -4rem; margin-bottom: 1rem;">
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        FIGURA SORPRESA
-      </li>
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        STICKER FRIKI
-      </li>
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        GOLOSINA TEMATICA
-      </li>
-      <li class="d-flex align-items-center mb-1 text-danger">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
-        POSTER
-      </li>
-      <li class="d-flex align-items-center mb-3 text-danger">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
-        ITEM EXCLUSIVO
-      </li>
-    </ul>
-
-    <!-- Precio -->
-    <p class="text-white fw-bold mb-2" style="margin-left: 30px;font-size: 1.25rem;">
-      $12.000 <span style="font-size: 0.85rem;">/MES</span>
-    </p>
-          <a href="Página detalle.html" style="margin-left: 30px;margin-bottom: 15rem;"class="custom-button upper w-50">Elegir plan</a>
-        </div>
-      </div>
-  
-
-      <!-- Card: Plan Full -->
-      <div class="col-md-4 mb-4">
-         <div class="card p-4 h-100 card-background" style="background-image: url('Imagenes/omegafondo_.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
-          <h5 class="titulo-grande" style="margin-top: 3rem; margin-left: 30px; margin-bottom: -4rem;">Omega_</h5>
-          <img src="Imagenes/Omega.png" class="img-fluid img-rounded my-3" alt="Plan Full">
-          <!-- Lista de beneficios -->
-    <ul class="list-unstyled text-white fw-semibold" style="width: 90%; margin: auto; margin-top: -4rem; margin-bottom: 1rem;">
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        FIGURA SORPRESA
-      </li>
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        STICKER FRIKI
-      </li>
-      <li class="d-flex align-items-center mb-1">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
-        GOLOSINA TEMATICA
-      </li>
-      <li class="d-flex align-items-center mb-1 text-danger">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
-        POSTER
-      </li>
-      <li class="d-flex align-items-center mb-3 text-danger">
-        <span class="rounded-circle d-inline-block fw-bold text-center me-2"
-              style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
-        ITEM EXCLUSIVO
-      </li>
-    </ul>
-
-    <!-- Precio -->
-    <p class="text-white fw-bold mb-2" style="margin-left: 30px;font-size: 1.25rem;">
-      $12.000 <span style="font-size: 0.85rem; ">/MES</span>
-    </p>
-          <a href="Página detalle.html" style="margin-left: 30px;margin-bottom: 15rem;"class="custom-button upper w-50">Elegir plan</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALERÍA C: Carrusel horizontal con tarjetas -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="titulo-grandenegro">Lo que dicen los <span class="texto-gradiente">
-  Frikis</span></h2>
-  <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
-          <!-- Card 1 -->
-          <div class="review-card p-3 rounded text-light">
-            <img src="avatar1.jpg" alt="Usuario 1" class="avatar mb-2">
-            <div class="stars">★★★★★</div>
-            <p class="text">“Ideal para regalar. Ya compré 3 suscripciones para mis amigxs.”</p>
-            <p class="username">@otakulover</p>
-          </div>
-          <!-- Card 2 -->
-          <div class="review-card p-3 rounded text-light">
-            <img src="avatar2.jpg" alt="Usuario 2" class="avatar mb-2">
-            <div class="stars">★★★★★</div>
-            <p class="text">“No sabía que necesitaba esto en mi vida hasta que abrí la caja.”</p>
-            <p class="username">@frikimaster88</p>
-          </div>
-          <!-- Card 3 -->
-          <div class="review-card p-3 rounded text-light">
-            <img src="avatar3.jpg" alt="Usuario 3" class="avatar mb-2">
-            <div class="stars">★★★★★</div>
-            <p class="text">“La camiseta es tremenda, y los ítems son siempre una sorpresa épica.”</p>
-            <p class="username">@gamerinfinito</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
-          <!-- Card 4 -->
-          <div class="review-card p-3 rounded text-light">
-            <img src="avatar4.jpg" alt="Usuario 4" class="avatar mb-2">
-            <div class="stars">★★★★★</div>
-            <p class="text">“Me encantó la calidad de los productos, 100% recomendado.”</p>
-            <p class="username">@geekfanatic</p>
-          </div>
-          <!-- Card 5 -->
-          <div class="review-card p-3 rounded text-light">
-            <img src="avatar5.jpg" alt="Usuario 5" class="avatar mb-2">
-            <div class="stars">★★★★★</div>
-            <p class="text">“Cada caja es una sorpresa. Siempre espero con ansias la próxima.”</p>
-            <p class="username">@animeaddict</p>
-          </div>
-          <!-- Card 6 -->
-          <div class="review-card p-3 rounded text-light">
-            <img src="avatar6.jpg" alt="Usuario 6" class="avatar mb-2">
-            <div class="stars">★★★★★</div>
-            <p class="text">“Lo mejor que he comprado este año. Excelente para regalar.”</p>
-            <p class="username">@gamerpro</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-
-        <section id="GeekSwap" class="py-5 geekswap-section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Columna izquierda: imagen entera ya armada -->
-                    <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
-                        <div class="espaciado2">
-                            <img src="Imagenes/geek.png" alt="Mockup GeekSwap" class="img-fluid" />
-                        </div>
-                    </div>
-
-                    <!-- Columna derecha: texto y botones -->
-                    <div class="col-12 col-lg-6 text-center text-lg-start">
-                        <p class="fw-semibold text-uppercase small mb-2 text-muted">
-                            Exclusivo para miembros de FirkiCaja
-                        </p>
-
-                        <h2 class="display-5 fw-bold lh-sm mb-3">
-                            Con <span class="texto-gradiente">GeekSwap</span><br />
-                            intercambiá lo que te sobra y conseguí lo que te falta
-                        </h2>
-
-                        <p class="mb-4 text-muted">
-                            GeekSwap es una funcionalidad exclusiva que te permite intercambiar repetidos con otros coleccionistas.</span><br />
-¡Hacé crecer tu colección sin gastar de más!                       </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-<!-- Contenedor padre con fondo compartido -->
-<div class="fondo-compartido">
-  <!-- Sección Nosotros -->
-  <section id="nosotros" class="clientes-section text-center">
-    <div class="container">
-      <!-- Título y subtítulo -->
-      <h2 class="clientes-title">
-        Modo friki <span class="texto-gradiente">activado</span>
-      </h2>
-
-      <p class="clientes-subtitle" style="margin-top: -2rem;">
-        Recibir tu firkicaja es solo el principio. Mirá todo lo que podés vivir con cada entrega.
-      </p>
-
-      <!-- Cards -->
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-4 text-center">
-          <div class="cliente-card" style="background-image: url('Imagenes/abriendo.png');"></div>
-          <div class="mt-3 px-2">
-            <h5 class="text-white">Unboxing en modo épico</h5>
-            <p class="style text-white">Cada caja guarda una sorpresa. Abrila, descubrila y reviví ese momento una y otra vez.</p>
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="cliente-card" style="background-image: url('Imagenes/manada.png');"></div>
-          <div class="mt-3 px-2">
-            <h5 class="texto-gradiente">Compartilo con tu manada</h5>
-            <p class="style text-white">Mostrá tu loot, hacé un unboxing, reaccioná con tus amigos. Es más divertido cuando lo compartís.</p>
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="cliente-card" style="background-image: url('Imagenes/Coleccion.png');"></div>
-          <div class="mt-3 px-2">
-            <h5 class="text-white">Dale vida a tu rincón</h5>
-            <p class="style text-white">Cada figura, cómic o pin tiene su lugar. Decorá tu espacio y transformalo en tu santuario geek.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Segunda sección que comparte fondo -->
-  <section id="coleccion" class="espaciadoLeft">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-start flex-wrap flex-md-nowrap mt-5 middle-block">
-        <div class="left-text col-12 col-md-6 pe-md-5">
-          <h2 class="headline-unique mb-0">
-            ¿Qué estás esperando para vivir la experiencia completa?
-          </h2>
-        </div>
-        <div class="right-text col-12 col-md-6 mt-4 mt-md-0">
-          <p class="unique-copy">
-            Cada firkicaja es una historia en sí misma.<br />
-            Abrila, vivila, compartila… y que empiece tu colección.
-          <p class="custom-button upper w-50">Sumate ahora.</p> Sumate ahora.</strong>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-
-<!-- FAQS: Preguntas frecuentes -->
-<section id="faq" class="section-spacing container mt-5">
-  <p class="fw-semibold text-center small mb-2 text-muted">
-                            ¿Querés preguntar algo?
-                        </p>
-  <h2 class="h5-custom text-center">Preguntas Frecuentes</h2>
-
-  <div class="row mt-5">
-    <!-- Columna izquierda -->
-    <div class="col-md-6">
-      <div class="faq-item">
-        <button class="faq-question d-flex justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
-          ¿Puedo elegir qué figura o cómic recibir?
-          <i class="bi bi-chevron-down icon-toggle"></i>
-        </button>
-        <div id="faq1" class="collapse">
-          <div class="faq-answer">
-            No, el contenido es sorpresa. Esa es parte de la experiencia FrikiCaja: recibir cada mes una selección única.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question d-flex justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-          ¿Cómo funciona el sistema GeekSwap?
-          <i class="bi bi-chevron-down icon-toggle"></i>
-        </button>
-        <div id="faq2" class="collapse">
-          <div class="faq-answer">
-            GeekSwap es nuestro sistema de intercambio. Si recibís una figura o cómic que ya tenés, podés intercambiarlo por otro con otros miembros del club. Cada plan incluye ciertos beneficios dentro del sistema (cantidad de intercambios, prioridad, etc.).
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question d-flex justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-          ¿Qué pasa si recibo una figura dañada?
-          <i class="bi bi-chevron-down icon-toggle"></i>
-        </button>
-        <div id="faq3" class="collapse">
-          <div class="faq-answer">
-            Si el producto está dañado, podés contactarnos dentro de los primeros 7 días con fotos y te enviaremos un reemplazo.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Columna derecha -->
-    <div class="col-md-6">
-      <div class="faq-item">
-        <button class="faq-question d-flex justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-           ¿Puedo cambiarme de plan o cancelar mi suscripción?
-          <i class="bi bi-chevron-down icon-toggle"></i>
-        </button>
-        <div id="faq4" class="collapse">
-          <div class="faq-answer">
-            Sí, podés cambiar de plan o cancelar en cualquier momento desde tu perfil. Si ya fue procesado el pedido del mes en curso, el cambio aplicará al siguiente ciclo.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question d-flex justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
-          ¿Qué pasa si no estoy en casa cuando llega mi caja?
-          <i class="bi bi-chevron-down icon-toggle"></i>
-        </button>
-        <div id="faq5" class="collapse">
-          <div class="faq-answer">
-            No te preocupes. Si no estás en el momento de entrega, el correo dejará un aviso e intentará una segunda visita. Caso contrario, podrás retirarla en una sucursal cercana.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question d-flex justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
-          ¿Realizan envíos a todo el país?
-          <i class="bi bi-chevron-down icon-toggle"></i>
-        </button>
-        <div id="faq6" class="collapse">
-          <div class="faq-answer">
-            Sí, realizamos envíos a todo el territorio nacional. También podés consultar por envíos internacionales si estás en países limítrofes.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /FAQS -->
-
-<!-- CONTACT FORM: Formulario de contacto -->
-<section id="contacto" class="section-spacing container text-center">
-  <h2 class="titulo-grandenegro">¿Querés contactarnos?</h2>
-  <p class="p-custom">Envía un mensaje directamente desde la web.</p>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Tu nombre">
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Tu email">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
-        </div>
-        <button type="submit" class="custom-button upper w-100">Enviar Mensaje</button>
-      </form>
-    </div>
-  </div>
-</section>
-<!-- /CONTACT FORM -->
-
-<!-- MARCAS -->
-<div class="slider mb-5">
-  <div class="slide-track">
-    <div class="slide">
-      <img src="Imagenes/marvel.svg" alt="Marvel"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/star-wars.svg" alt="Star Wars"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/funko-seeklogo.png" alt="Funko Pop"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/harry-potter-seeklogo.png" alt="Harry Potter"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/960px-Disney_logo.png" alt="Disney"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/5852cd5c58215f0354495f67.png" alt="Naruto"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/620135024babde0004ca4189 (1).png" alt="DC"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/pngwing.com (2).png" alt="Pokemon"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/marvel.svg" alt="Marvel"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/star-wars.svg" alt="Star Wars"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/funko-seeklogo.png" alt="Funko Pop"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/harry-potter-seeklogo.png" alt="Harry Potter"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/960px-Disney_logo.png" alt="Disney"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/5852cd5c58215f0354495f67.png" alt="Naruto"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/620135024babde0004ca4189 (1).png" alt="DC"class="img-fluid" style="max-height: 80px;">
-    </div>
-    <div class="slide">
-      <img src="Imagenes/pngwing.com (2).png" alt="Pokemon"class="img-fluid" style="max-height: 80px;">
-    </div>
-  </div>
-</div>
-
-<!-- FOOTER: Pie de página -->
-<html lang="es">
-<head>
+  <!-- Configuración básica del documento -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Footer Friki</title>
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>FrikiCaja - Rossi Caula Lucas</title>
+
+  <!-- Tipografía desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Framework CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles copy.css">
 </head>
+
 <body>
 
-  <footer class="footer">
-    <div class="footer-columns">
-      <div class="footer-column">
-        <ul>
-          <li><a href="#">Precios</a></li>
-          <li><a href="#">Regalá una caja</a></li>
-          <li><a href="#">Qué hay en la caja</a></li>
-          <li><a href="#">Próxima edición</a></li>
-          <li><a href="#">Ediciones anteriores</a></li>
-          <li><a href="#">Mi cuenta</a></li>
-          <li><a href="#">Ayuda</a></li>
-        </ul>
+  <div class="contenedor-principal">
+    <!-- NAVBAR + TOPBAR envueltos en un solo contenedor -->
+    <div class="topnav-wrapper">
+
+      <!-- TOP-BAR -->
+      <div class="top-bar justify-content-center">
+        <p><span class="highlight"></p>Todavía tenés tiempo para conseguir ALTOS DESCUENTOS en las mejores planes</p>
+        <a href="#suscripciones" class="btn">Conseguilo! →</a>
       </div>
-      <div class="footer-column">
-        <ul>
-          <li><a href="#">Opiniones</a></li>
-          <li><a href="#">Afiliados</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Oferta del mes</a></li>
-          <li><a href="#">Cajas especiales</a></li>
-          <li><a href="#">Alternativas de cajas</a></li>
-        </ul>
-      </div>
-      <div class="footer-column newsletter">
-        <h4>Sé parte del club friki</h4>
-        <form>
-          <input type="email" placeholder="Email">
-          <button type="submit">></button>
-        </form>
-        <p>Dejá tu email para recibir noticias, spoilers y<br>descuentos exclusivos</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container" style="background-color: black;"">
+          <!-- Logo o nombre del sitio -->
+          <a class="navbar-brand text-uppercase" href="#">Frikicaja</a>
+
+          <!-- Botón menú mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Ítems del menú -->
+          <div class="collapse navbar-collapse text-uppercase justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#comofunciona">Cómo funciona</a></li>
+              <li class="nav-item"><a class="nav-link" href="#suscripciones">Suscripciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+              <a href="#suscripciones" class="custom-button upper" style="margin-left: 2rem;">Suscribirse</a>
+            </ul>
+          </div>
         </div>
-        <p class="payment-info">Métodos de pago aceptados</p>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section id="Home" class="section-spacing" style="min-height: 90vh;
+      background-size: cover; /* para que ocupe todo el fondo */
+      background-position: center center; /* para centrar la imagen */">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Texto principal -->
+          <div class="col-lg-6 col-md-12 text-center text-lg-start hero-text">
+            <p class="titulo-fino">NO ES UNA CAJA</p>
+            <h1 class="titulo-grande"> ES TU PRÓXIMA<br><span class="texto-gradiente">
+                OBSESIÓN</span>
+            </h1>
+            <p class="inter">
+              Suscripción mensual con cómics edición variante, figuras exclusivas y merch oficial
+            </p>
+            <a href="#suscripciones" class="custom-button upper">¡Quiero mi caja!</a>
+          </div>
+
+          <!-- Imagen destacada -->
+          <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+            <img src="Media/usuarioMesa de trabajo 1.png" class="img-fluid img-rounded hero-img-desktop"
+              alt="Imagen Hero">
+          </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT: Sección sobre nosotros -->
+    <section id="comofunciona" class="section-spacing container text-center"
+      style="min-height: 100vh; padding-top: 90px; ">
+      <p class="h5">Lo principal</p>
+      <h2 class="titulo-grandenegro" style="color: #fff;">¿Cómo funciona?</h2>
+      <div class="row">
+        <!-- Tres columnas informativas -->
+        <div class="col-md-3">
+          <img src="Media/Iconosfuncion/Mesa de trabajo 2.png" alt="Miembro 1">
+          <h5 class="h5">Elegís tu plan</h5>
+          <p class="p-custom">¡Elegí tu plan y empezá tu colección!</p>
+        </div>
+        <div class="col-md-3">
+          <img src="Media/Iconosfuncion/Mesa de trabajo 10.png" alt="Miembro 1">
+          <h4 class="h5">Armamos tu caja</h4>
+          <p class="p-custom">¡Seleccionamos tus próximos coleccionables exclusivos!</p>
+        </div>
+        <div class="col-md-3">
+          <img src="Media/Iconosfuncion/Mesa de trabajo 11.png" alt="Miembro 1">
+          <h4 class="h5">Enviamos</h4>
+          <p class="p-custom">¡Cada mes empacamos tu caja y te la enviamos!</p>
+        </div>
+        <div class="col-md-3">
+          <img src="Media/Iconosfuncion/Mesa de trabajo 12.png" alt="Miembro 1">
+          <h4 class="h5">Disfrutas</h4>
+          <p class="p-custom">Abrís. Flipás. Y ya estás esperando la próxima.</p>
+        </div>
+      </div>
+    </section>
+    <!-- /ABOUT -->
+
+    <!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+    <section class="section-spacing container">
+      <div class="row align-items-center">
+        <!-- Columna de imagen -->
+        <div class="col-lg-6 text-center mb-4 mb-lg-0">
+          <img src="Media/elegimos 22.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+        </div>
+        <!-- Columna de texto -->
+        <div class="col-lg-6">
+          <p class="h5">Lo principal</p>
+          <h2 class="titulo-grandenegro" style="color: #fff;">¿Por qué elegirnos?</h2>
+          <h4 class="h5-custom"></i>Porque sabés que te lo mereces</h4>
+          <p class="p-custom"><i class="bi bi-arrow-down-right-square"></i> Cada caja está pensada para sorprender con
+            lo mejor del mundo freaky. </p>
+          <h4 class="h5-custom">Ediciones exclusivas</h4>
+          <p class="p-custom"><i class="bi bi-arrow-down-right-square"></i> Productos únicos, limitados y seleccionados
+            especialmente para vos.</p>
+          <h4 class="h5-custom">¡Y con envío gratis!</h4>
+          <p class="p-custom"><i class="bi bi-arrow-down-right-square"></i> Te llega directo a tu puerta. Cero
+            preocucccpaciones, solo emoción.</p>
+          <a href="#suscripciones" class="custom-button upper">¡Quiero mi caja!</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+    <section id="suscripciones" class="section-spacing"
+      style="min-height: 90vh; padding-top: 120px; background-image: url('Media/fondoBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <div class="container">
+        <p class="mt-3 mb-3 text-center">Lo principal</p>
+        <h2 class="h2-custom text-center" style="color: #fff;">Planes de Suscripción</h2>
+        <p class="mt-3 mb-3 text-center">Elegí el plan que mejor se adapta a tus necesidades.<br>
+          Cada uno incluye diferentes beneficios pensados para vos. </p>
+        <div class="row mt-5">
+          <!-- Card: Plan Básico -->
+          <div class="col-md-4 mb-4">
+            <div class="card p-4 h-100 card-background"
+              style="background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
+              <h5 class="titulo-grande" style="margin-left: 30px;margin-top: 3rem; margin-bottom: -4rem;">Beta_</h5>
+              <img src="Media/Frikicajas/Mesa de trabajo 1.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-white fw-semibold"
+                style="width: 90%; margin: auto; margin-top: -4rem; margin-bottom: 1rem;">
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  FIGURA SORPRESA
+                </li>
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  STICKER FRIKI
+                </li>
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  GOLOSINA TEMATICA
+                </li>
+                <li class="d-flex align-items-center mb-1 text-danger">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
+                  POSTER
+                </li>
+                <li class="d-flex align-items-center mb-3 text-danger">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
+                  ITEM EXCLUSIVO
+                </li>
+              </ul>
+
+              <!-- Precio -->
+              <p class="text-white fw-bold mb-2" style="margin-left: 30px;font-size: 1.25rem;">
+                $12.000 <span style="font-size: 0.85rem;">/MES</span>
+              </p>
+
+              <a href="Página detalle.html"
+                class="custom-button upper">Elegir plan</a>
+            </div>
+          </div>
+
+          <!-- Card: Plan Pro (Recomendado) -->
+          <div class="col-md-4 mb-4">
+            <div class="card p-4 h-100 card-background"
+              style="background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
+              <h5 class="titulo-grande" style="margin-left: 30px;margin-top: 3rem; margin-bottom: -4rem;">Alpha_ </h5>
+              <img src="Media/Frikicajas/Mesa de trabajo 2.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-white fw-semibold"
+                style="width: 90%; margin: auto; margin-top: -4rem; margin-bottom: 1rem;">
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  FIGURA SORPRESA
+                </li>
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  STICKER FRIKI
+                </li>
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  GOLOSINA TEMATICA
+                </li>
+                <li class="d-flex align-items-center mb-1 text-danger">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
+                  POSTER
+                </li>
+                <li class="d-flex align-items-center mb-3 text-danger">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
+                  ITEM EXCLUSIVO
+                </li>
+              </ul>
+
+              <!-- Precio -->
+              <p class="text-white fw-bold mb-2" style="margin-left: 30px;font-size: 1.25rem;">
+                $12.000 <span style="font-size: 0.85rem;">/MES</span>
+              </p>
+              <a href="Página detalle.html" style="margin-left: 30px;margin-bottom: 15rem;"
+                class="custom-button upper w-50">Elegir plan</a>
+            </div>
+          </div>
+
+
+          <!-- Card: Plan Full -->
+          <div class="col-md-4 mb-4">
+            <div class="card p-4 h-100 card-background"
+              style=" background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
+              <h5 class="titulo-grande" style="margin-top: 3rem; margin-left: 30px; margin-bottom: -4rem;">Omega_</h5>
+              <img src="Media/Frikicajas/Mesa de trabajo 3.png" class="img-fluid img-rounded my-3" alt="Plan Full">
+              <!-- Lista de beneficios -->
+              <ul class="list-unstyled text-white fw-semibold"
+                style="width: 90%; margin: auto; margin-top: -4rem; margin-bottom: 1rem;">
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  FIGURA SORPRESA
+                </li>
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  STICKER FRIKI
+                </li>
+                <li class="d-flex align-items-center mb-1">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">+</span>
+                  GOLOSINA TEMATICA
+                </li>
+                <li class="d-flex align-items-center mb-1 text-danger">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
+                  POSTER
+                </li>
+                <li class="d-flex align-items-center mb-3 text-danger">
+                  <span class="rounded-circle d-inline-block fw-bold text-center me-2"
+                    style=" width: 24px; height: 24px; font-size: 0.85rem;">–</span>
+                  ITEM EXCLUSIVO
+                </li>
+              </ul>
+
+              <!-- Precio -->
+              <p class="text-white fw-bold mb-2" style="margin-left: 30px;font-size: 1.25rem;">
+                $12.000 <span style="font-size: 0.85rem; ">/MES</span>
+              </p>
+              <a href="Página detalle.html" style="margin-left: 30px;margin-bottom: 15rem;"
+                class="custom-button upper w-50">Elegir plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA C: Carrusel horizontal con tarjetas -->
+    <section class="section-spacing container py-5 text-center">
+      <h2 class="titulo-grandenegro">Lo que dicen los <span class="texto-gradiente">
+          Frikis</span></h2>
+      <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <!-- Card 1 -->
+              <div class="review-card-horizontal text-light">
+                <img src="Media/Usuarios/usuario1.png" alt="Usuario 1" class="avatar">
+                <div class="review-content">
+                  <div class="stars">★★★★★</div>
+                  <p class="text">“Ideal para regalar. Ya compré 3 suscripciones para mis amigxs.”</p>
+                  <p class="username">@otakulover</p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="review-card-horizontal text-light">
+                <img src="Media/Usuarios/usuario2.png" alt="Usuario 2" class="avatar">
+                <div class="review-content">
+                  <div class="stars">★★★★★</div>
+                  <p class="text">“No sabía que necesitaba esto en mi vida hasta que abrí la caja.”</p>
+                  <p class="username">@frikimaster88</p>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="review-card-horizontal text-light">
+                <img src="Media/Usuarios/usuario3.png" alt="Usuario 3" class="avatar">
+                <div class="review-content">
+                  <div class="stars">★★★★★</div>
+                  <p class="text">“La camiseta es tremenda, y los ítems son siempre una sorpresa épica.”</p>
+                  <p class="username">@gamerinfinito</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <!-- Card 1 -->
+              <div class="review-card-horizontal text-light">
+                <img src="Media/Usuarios/usuario1.png" alt="Usuario 1" class="avatar">
+                <div class="review-content">
+                  <div class="stars">★★★★★</div>
+                  <p class="text">“Ideal para regalar. Ya compré 3 suscripciones para mis amigxs.”</p>
+                  <p class="username">@otakulover</p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="review-card-horizontal text-light">
+                <img src="Media/Usuarios/usuario2.png" alt="Usuario 2" class="avatar">
+                <div class="review-content">
+                  <div class="stars">★★★★★</div>
+                  <p class="text">“No sabía que necesitaba esto en mi vida hasta que abrí la caja.”</p>
+                  <p class="username">@frikimaster88</p>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="review-card-horizontal text-light">
+                <img src="Media/Usuarios/usuario3.png" alt="Usuario 3" class="avatar">
+                <div class="review-content">
+                  <div class="stars">★★★★★</div>
+                  <p class="text">“La camiseta es tremenda, y los ítems son siempre una sorpresa épica.”</p>
+                  <p class="username">@gamerinfinito</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+    </section>
+
+    <section id="GeekSwap" class="py-5 geekswap-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Columna izquierda: imagen entera ya armada -->
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+            <div class="espaciado2">
+              <img src="Media/Iconosbeneficios/Mesa de trabajo 9.png" alt="Mockup GeekSwap" class="img-fluid" />
+            </div>
+          </div>
+
+          <!-- Columna derecha: texto y botones -->
+          <div class="col-12 col-lg-6 text-center text-lg-start">
+            <p class="fw-semibold text-uppercase small mb-2 text-muted">
+              Exclusivo para miembros de FirkiCaja
+            </p>
+
+            <h2 class="display-5 fw-bold lh-sm mb-3">
+              Con <span class="texto-gradiente">GeekSwap</span><br />
+              intercambiá lo que te sobra y conseguí lo que te falta
+            </h2>
+
+            <p class="mb-4 text-muted">
+              GeekSwap es una funcionalidad exclusiva que te permite intercambiar repetidos con otros
+              coleccionistas.</span><br />
+              ¡Hacé crecer tu colección sin gastar de más! </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenedor padre con fondo compartido -->
+    <div class="fondo-compartido">
+      <!-- Sección Nosotros -->
+      <section id="nosotros" class="clientes-section text-center">
+        <div class="container">
+          <!-- Título y subtítulo -->
+          <h2 class="clientes-title">
+            Modo friki <span class="texto-gradiente">activado</span>
+          </h2>
+
+          <p class="clientes-subtitle" style="margin-top: -2rem;">
+            Recibir tu firkicaja es solo el principio. Mirá todo lo que podés vivir con cada entrega.
+          </p>
+
+          <!-- Cards -->
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4 text-center">
+              <div class="cliente-card" style="background-image: url('Imagenes/abriendo.png');"></div>
+              <div class="mt-3 px-2">
+                <h5 class="text-white">Unboxing en modo épico</h5>
+                <p class="style text-white">Cada caja guarda una sorpresa. Abrila, descubrila y reviví ese momento una y
+                  otra vez.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="cliente-card" style="background-image: url('Imagenes/manada.png');"></div>
+              <div class="mt-3 px-2">
+                <h5 class="texto-gradiente">Compartilo con tu manada</h5>
+                <p class="style text-white">Mostrá tu loot, hacé un unboxing, reaccioná con tus amigos. Es más divertido
+                  cuando lo compartís.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="cliente-card" style="background-image: url('Imagenes/Coleccion.png');"></div>
+              <div class="mt-3 px-2">
+                <h5 class="text-white">Dale vida a tu rincón</h5>
+                <p class="style text-white">Cada figura, cómic o pin tiene su lugar. Decorá tu espacio y transformalo en
+                  tu santuario geek.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Segunda sección que comparte fondo -->
+      <section id="coleccion" class="espaciadoLeft">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-start flex-wrap flex-md-nowrap mt-5 middle-block">
+            <div class="left-text col-12 col-md-6 pe-md-5">
+              <h2 class="headline-unique mb-0">
+                ¿Qué estás esperando para vivir la experiencia completa?
+              </h2>
+            </div>
+            <div class="right-text col-12 col-md-6 mt-4 mt-md-0">
+              <p class="unique-copy">
+                Cada firkicaja es una historia en sí misma.<br />
+                Abrila, vivila, compartila… y que empiece tu colección.
+              <p class="custom-button upper w-50">Sumate ahora.</p> Sumate ahora.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- FAQS: Preguntas frecuentes -->
+    <section id="faq" class="section-spacing container mt-5">
+      <p class="fw-semibold text-center small mb-2 text-muted">
+        ¿Querés preguntar algo?
+      </p>
+      <h2 class="h5-custom text-center" style="color: #fff;">Preguntas Frecuentes</h2>
+
+      <div class="row mt-5">
+        <!-- Columna izquierda -->
+        <div class="col-md-6">
+          <div class="faq-item">
+            <button class="faq-question d-flex justify-content-between align-items-center w-100"
+              data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1"
+              style="color: #fff;">
+              ¿Puedo elegir qué figura o cómic recibir?
+              <i class="bi bi-chevron-down icon-toggle"></i>
+            </button>
+            <div id="faq1" class="collapse">
+              <div class="faq-answer" style="color: #fff;">
+                No, el contenido es sorpresa. Esa es parte de la experiencia FrikiCaja: recibir cada mes una selección
+                única.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question d-flex justify-content-between align-items-center w-100"
+              data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2"
+              style="color: #fff;">
+              ¿Cómo funciona el sistema GeekSwap?
+              <i class="bi bi-chevron-down icon-toggle"></i>
+            </button>
+            <div id="faq2" class="collapse">
+              <div class="faq-answer" style="color: #fff;">
+                GeekSwap es nuestro sistema de intercambio. Si recibís una figura o cómic que ya tenés, podés
+                intercambiarlo por otro con otros miembros del club. Cada plan incluye ciertos beneficios dentro del
+                sistema (cantidad de intercambios, prioridad, etc.).
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question d-flex justify-content-between align-items-center w-100"
+              data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3"
+              style="color: #fff;">
+              ¿Qué pasa si recibo una figura dañada?
+              <i class="bi bi-chevron-down icon-toggle"></i>
+            </button>
+            <div id="faq3" class="collapse">
+              <div class="faq-answer" style="color: #fff;">
+                Si el producto está dañado, podés contactarnos dentro de los primeros 7 días con fotos y te enviaremos
+                un reemplazo.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-md-6">
+          <div class="faq-item">
+            <button class="faq-question d-flex justify-content-between align-items-center w-100"
+              data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4"
+              style="color: #fff;">
+              ¿Puedo cambiarme de plan o cancelar mi suscripción?
+              <i class="bi bi-chevron-down icon-toggle"></i>
+            </button>
+            <div id="faq4" class="collapse">
+              <div class="faq-answer" style="color: #fff;">
+                Sí, podés cambiar de plan o cancelar en cualquier momento desde tu perfil. Si ya fue procesado el pedido
+                del mes en curso, el cambio aplicará al siguiente ciclo.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question d-flex justify-content-between align-items-center w-100"
+              data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5"
+              style="color: #fff;">
+              ¿Qué pasa si no estoy en casa cuando llega mi caja?
+              <i class="bi bi-chevron-down icon-toggle"></i>
+            </button>
+            <div id="faq5" class="collapse">
+              <div class="faq-answer" style="color: #fff;">
+                No te preocupes. Si no estás en el momento de entrega, el correo dejará un aviso e intentará una segunda
+                visita. Caso contrario, podrás retirarla en una sucursal cercana.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question d-flex justify-content-between align-items-center w-100"
+              data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6"
+              style="color: #fff;">
+              ¿Realizan envíos a todo el país?
+              <i class="bi bi-chevron-down icon-toggle"></i>
+            </button>
+            <div id="faq6" class="collapse">
+              <div class="faq-answer" style="color: #fff;">
+                Sí, realizamos envíos a todo el territorio nacional. También podés consultar por envíos internacionales
+                si estás en países limítrofes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /FAQS -->
+
+    <!-- CONTACT FORM: Formulario de contacto -->
+    <section id="contacto" class="section-spacing container text-center">
+      <h2 class="titulo-grandenegro">¿Querés contactarnos?</h2>
+      <p class="p-custom">Envía un mensaje directamente desde la web.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Tu email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="custom-button upper w-100">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- /CONTACT FORM -->
+
+    <!-- MARCAS -->
+    <div class="slider mb-5">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="Imagenes/marvel.svg" alt="Marvel" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/star-wars.svg" alt="Star Wars" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/funko-seeklogo.png" alt="Funko Pop" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/harry-potter-seeklogo.png" alt="Harry Potter" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/960px-Disney_logo.png" alt="Disney" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/5852cd5c58215f0354495f67.png" alt="Naruto" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/620135024babde0004ca4189 (1).png" alt="DC" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/pngwing.com (2).png" alt="Pokemon" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/marvel.svg" alt="Marvel" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/star-wars.svg" alt="Star Wars" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/funko-seeklogo.png" alt="Funko Pop" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/harry-potter-seeklogo.png" alt="Harry Potter" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/960px-Disney_logo.png" alt="Disney" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/5852cd5c58215f0354495f67.png" alt="Naruto" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/620135024babde0004ca4189 (1).png" alt="DC" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <div class="slide">
+          <img src="Imagenes/pngwing.com (2).png" alt="Pokemon" class="img-fluid" style="max-height: 80px;">
+        </div>
+          
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>© 2025. Todos los derechos reservados. <a href="#">Términos y condiciones</a> <a href="#">Política de Privacidad</a></p>
-    </div>
-  </footer>
+    <!-- FOOTER: Pie de página -->
+    <html lang="es">
 
-</body>
-</html>
-<!-- /FOOTER -->
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Footer Friki</title>
+      <link rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
 
-<!-- Bootstrap Bundle JS (incluye Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <body>
 
-<!-- Script personalizado para cambiar el navbar al hacer scroll -->
-<script>
-window.addEventListener('scroll', function() {
-  const navbar = document.querySelector('.navbar');
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-</script>
+      <footer class="footer">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Precios</a></li>
+              <li><a href="#">Regalá una caja</a></li>
+              <li><a href="#">Qué hay en la caja</a></li>
+              <li><a href="#">Próxima edición</a></li>
+              <li><a href="#">Ediciones anteriores</a></li>
+              <li><a href="#">Mi cuenta</a></li>
+              <li><a href="#">Ayuda</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Opiniones</a></li>
+              <li><a href="#">Afiliados</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Oferta del mes</a></li>
+              <li><a href="#">Cajas especiales</a></li>
+              <li><a href="#">Alternativas de cajas</a></li>
+            </ul>
+          </div>
+          <div class="footer-column newsletter">
+            <h4>Sé parte del club friki</h4>
+            <form>
+              <input type="email" placeholder="Email">
+              <button type="submit">></button>
+            </form>
+            <p>Dejá tu email para recibir noticias, spoilers y<br>descuentos exclusivos</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="payment-info">Métodos de pago aceptados</p>
+          </div>
+        </div>
 
-<!-- Scripts adicionales -->
-<script src="scripts.js"></script>
+        <div class="footer-bottom">
+          <p>© 2025. Todos los derechos reservados. <a href="#">Términos y condiciones</a> <a href="#">Política de
+              Privacidad</a></p>
+        </div>
+      </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll('.nav-link');
+    </body>
 
-    navLinks.forEach(link => {
-      link.addEventListener('click', function () {
-        // Sacamos 'active' de todos los links
-        navLinks.forEach(el => el.classList.remove('active'));
-        // Agregamos 'active' al clickeado
-        this.classList.add('active');
+    </html>
+    <!-- /FOOTER -->
+
+    <!-- Bootstrap Bundle JS (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+
+    <!-- Script personalizado para cambiar el navbar al hacer scroll -->
+    <script>
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
       });
-    });
-  });
-</script>
+    </script>
+
+    <!-- Scripts adicionales -->
+    <script src="scripts.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+          link.addEventListener('click', function () {
+            // Sacamos 'active' de todos los links
+            navLinks.forEach(el => el.classList.remove('active'));
+            // Agregamos 'active' al clickeado
+            this.classList.add('active');
+          });
+        });
+      });
+    </script>
+
+    <style>
+      @media (min-width: 992px) {
+        .hero-img-desktop {
+          max-width: 1500px;
+          width: 150%;
+          height: auto;
+          margin-left: 7rem;
+        }
+
+        .hero-text {
+          margin-left: -6rem;
+          padding-left: 0;
+          text-align: left !important;
+          max-width: 520px;
+        }
+
+        .hero-text .titulo-fino {
+          font-size: 2.2rem;
+        }
+
+        .hero-text .titulo-grande {
+          font-size: 4.5rem;
+          line-height: 1.1;
+        }
+
+        .hero-text .inter {
+          font-size: 1.5rem;
+        }
+
+        .hero-text .custom-button {
+          font-size: 1.2rem;
+          padding: 1rem 2.5rem;
+        }
+      }
+
+      /* Ajusta márgenes entre título, imagen y texto en las cards de planes */
+      .card.card-background .titulo-grande {
+        margin-top: 2rem !important;
+        margin-bottom: 1.2rem !important;
+      }
+
+      .card.card-background img {
+        margin-top: 0.8rem !important;
+        margin-bottom: 1.2rem !important;
+      }
+
+      .card.card-background ul {
+        margin-top: 0.8rem !important;
+        margin-bottom: 1.2rem !important;
+      }
+
+      /* Reduce la altura del contenedor de las cards */
+      .card.card-background {
+        min-height: 270px !important;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+      }
+    </style>
 
 </body>
+
 </html>
