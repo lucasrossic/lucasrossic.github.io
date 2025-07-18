@@ -23,6 +23,9 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="styles copy.css">
 </head>
@@ -31,17 +34,16 @@
 
   <div class="contenedor-principal">
     <!-- NAVBAR + TOPBAR envueltos en un solo contenedor -->
-    <div class="topnav-wrapper">
-
+    <div class="topnav-wrapper" data-aos="fade-down" data-aos-delay="50" data-aos-duration="400" data-aos-once="true">
       <!-- TOP-BAR -->
-      <div class="top-bar justify-content-center">
+      <div class="top-bar justify-content-center" data-aos="fade-down" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
         <p><span class="highlight"></p>Todavía tenés tiempo para conseguir ALTOS DESCUENTOS en las mejores planes</p>
         <a href="#suscripciones" class="btn">Conseguilo! →</a>
       </div>
 
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container" style="background-color: black;"">
+      <nav class="navbar navbar-expand-lg" data-aos="fade-down" data-aos-delay="200" data-aos-duration="400" data-aos-once="true">
+        <div class="container" style="background-color: black;">
           <!-- Logo o nombre del sitio -->
           <a class="navbar-brand text-uppercase" href="#">Frikicaja</a>
 
@@ -66,12 +68,12 @@
 
     <!-- HERO -->
     <section id="Home" class="section-spacing hero-bg-opacity"
-      style="min-height: 90vh; padding-top: 120px; background-image: url('Media/fondoderBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      style="min-height: 90vh; padding-top: 120px; background-image: url('Media/fondoderBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;"
+      data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
       <div class="container">
         <div class="row align-items-center">
-
           <!-- Texto principal -->
-          <div class="col-lg-6 col-md-12 text-center text-lg-start hero-text">
+          <div class="col-lg-6 col-md-12 text-center text-lg-start hero-text" data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-once="true">
             <p class="titulo-fino" style="margin-bottom: 0px;">NO ES UNA CAJA</p>
             <h1 class="titulo-grande"> ES TU PRÓXIMA<br><span class="texto-gradiente">
                 OBSESIÓN</span>
@@ -81,39 +83,37 @@
             </p>
             <a href="#suscripciones" class="custom-button upper">¡Quiero mi caja!</a>
           </div>
-
           <!-- Imagen destacada -->
-          <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+          <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" data-aos-once="true">
             <img src="Media/usuarioMesa de trabajo 1.png" class="img-fluid img-rounded hero-img-desktop"
               alt="Imagen Hero">
           </div>
-
         </div>
+      </div>
     </section>
 
     <!-- ABOUT: Sección sobre nosotros -->
     <section id="comofunciona" class="section-spacing container text-center"
-      style="min-height: 100vh; padding-top: 90px; ">
-      <p class="h5">Lo principal</p>
-      <h2 class="titulo-grandenegro" style="color: #fff;">¿Cómo funciona?</h2>
+      style="min-height: 100vh; padding-top: 90px; "
+      data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
       <div class="row">
-        <!-- Tres columnas informativas -->
-        <div class="col-md-3">
+        <!-- Tres columnas informativas con animación escalonada -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
           <img src="Media/Iconosfuncion/Mesa de trabajo 2.png" alt="Miembro 1">
           <h5 class="h5" style="margin-top: 30px;">Elegís tu plan</h5>
           <p class="p-custom">¡Elegí tu plan y empezá tu colección!</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="250" data-aos-duration="400" data-aos-once="true">
           <img src="Media/Iconosfuncion/Mesa de trabajo 10.png" alt="Miembro 1">
           <h4 class="h5"style="margin-top: 30px;">Armamos tu caja</h4>
           <p class="p-custom">¡Seleccionamos tus próximos coleccionables exclusivos!</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="400" data-aos-once="true">
           <img src="Media/Iconosfuncion/Mesa de trabajo 11.png" alt="Miembro 1">
           <h4 class="h5"style="margin-top: 30px;">Enviamos</h4>
           <p class="p-custom">¡Cada mes empacamos tu caja y te la enviamos!</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="550" data-aos-duration="400" data-aos-once="true">
           <img src="Media/Iconosfuncion/Mesa de trabajo 12.png" alt="Miembro 1">
           <h4 class="h5"style="margin-top: 30px;">Disfrutas</h4>
           <p class="p-custom">Abrís. Flipás. Y ya estás esperando la próxima.</p>
@@ -123,14 +123,15 @@
     <!-- /ABOUT -->
 
     <!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-    <section class="section-spacing container" style="margin-top: -200px;">
+    <section class="section-spacing container" style="margin-top: -200px;"
+      data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
       <div class="row align-items-center" style="background-image: url('Media/fondoizqtransBlue\ Grid\ Lines\ On\ Dark\ Background.png'); ; background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <!-- Columna de imagen -->
-        <div class="col-lg-6 text-center mb-4 mb-lg-0" >
+        <div class="col-lg-6 text-center mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
           <img src="Media/elegimos 22.png" class="img-fluid img-rounded img-ilustrativa-desktop" alt="Imagen ilustrativa">
         </div>
         <!-- Columna de texto -->
-        <div class="col-lg-6" >
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350" data-aos-duration="400" data-aos-once="true">
           <p class="h5">Destacamos</p>
           <h2 class="titulo-grandenegro" >¿Por qué elegirnos?</h2>
           <h4 class="h5-custom"></i>Porque sabés que te lo mereces</h4>
@@ -149,15 +150,17 @@
 
     <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
     <section id="suscripciones" class="section-spacing"
-      style="min-height: 90vh; padding-top: 120px; background-image: url('Media/fondoBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      style="min-height: 90vh; padding-top: 120px; background-image: url('Media/fondoBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;"
+      data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
       <div class="container">
-        <p class="mt-3 mb-3 text-center">Lo principal</p>
-        <h2 class="h2-custom text-center" style="color: #fff;">Planes de Suscripción</h2>
-        <p class="mt-3 mb-3 text-center">Elegí el plan que mejor se adapta a tus necesidades.<br>
+        <p class="mt-3 mb-3 text-center" data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-once="true">Lo principal</p>
+        <h2 class="h2-custom text-center" style="color: #fff;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" data-aos-once="true">Planes de Suscripción</h2>
+        <p class="mt-3 mb-3 text-center" data-aos="fade-up" data-aos-delay="250" data-aos-duration="400" data-aos-once="true">
+          Elegí el plan que mejor se adapta a tus necesidades.<br>
           Cada uno incluye diferentes beneficios pensados para vos. </p>
         <div class="row mt-5">
           <!-- Card: Plan Básico -->
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
             <div class="card p-4 h-100 card-background"
               style="background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
               <h5 class="titulo-grande" style="margin-left: 30px;margin-top: 3rem; margin-bottom: -4rem;">Beta_</h5>
@@ -203,7 +206,7 @@
           </div>
 
           <!-- Card: Plan Pro (Recomendado) -->
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="250" data-aos-duration="400" data-aos-once="true">
             <div class="card p-4 h-100 card-background"
               style="background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
               <h5 class="titulo-grande" style="margin-left: 30px;margin-top: 3rem; margin-bottom: -4rem;">Alpha_ </h5>
@@ -249,7 +252,7 @@
 
 
           <!-- Card: Plan Full -->
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="400" data-aos-once="true">
             <div class="card p-4 h-100 card-background"
               style=" background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 350px; color: white;">
               <h5 class="titulo-grande" style="margin-top: 3rem; margin-left: 30px; margin-bottom: -4rem;">Omega_</h5>
@@ -297,16 +300,18 @@
     </section>
 
     <!-- GALERÍA C: Carrusel horizontal con tarjetas -->
-    <section class="section-spacing container py-5 text-center">
-      <h2 class="titulo-grandenegro">Lo que dicen los <span class="texto-gradiente">
-          Frikis</span></h2>
+    <section class="section-spacing container py-5 text-center"
+      data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
+      <h2 class="titulo-grandenegro" data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-once="true">
+        Lo que dicen los <span class="texto-gradiente">Frikis</span>
+      </h2>
       <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Slide 1 -->
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" data-aos-once="true">
             <div class="d-flex justify-content-center gap-3 flex-wrap">
               <!-- Card 1 -->
-              <div class="review-card-horizontal text-light">
+              <div class="review-card-horizontal text-light" data-aos="fade-up" data-aos-delay="220" data-aos-duration="400" data-aos-once="true">
                 <img src="Media/Usuarios/usuario1.png" alt="Usuario 1" class="avatar">
                 <div class="review-content">
                   <div class="stars">★★★★★</div>
@@ -315,7 +320,7 @@
                 </div>
               </div>
               <!-- Card 2 -->
-              <div class="review-card-horizontal text-light">
+              <div class="review-card-horizontal text-light" data-aos="fade-up" data-aos-delay="260" data-aos-duration="400" data-aos-once="true">
                 <img src="Media/Usuarios/usuario2.png" alt="Usuario 2" class="avatar">
                 <div class="review-content">
                   <div class="stars">★★★★★</div>
@@ -324,7 +329,7 @@
                 </div>
               </div>
               <!-- Card 3 -->
-              <div class="review-card-horizontal text-light">
+              <div class="review-card-horizontal text-light" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" data-aos-once="true">
                 <img src="Media/Usuarios/usuario3.png" alt="Usuario 3" class="avatar">
                 <div class="review-content">
                   <div class="stars">★★★★★</div>
@@ -336,10 +341,10 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-item active">
+          <div class="carousel-item" data-aos="fade-up" data-aos-delay="350" data-aos-duration="400" data-aos-once="true">
             <div class="d-flex justify-content-center gap-3 flex-wrap">
               <!-- Card 1 -->
-              <div class="review-card-horizontal text-light">
+              <div class="review-card-horizontal text-light" data-aos="fade-up" data-aos-delay="370" data-aos-duration="400" data-aos-once="true">
                 <img src="Media/Usuarios/usuario1.png" alt="Usuario 1" class="avatar">
                 <div class="review-content">
                   <div class="stars">★★★★★</div>
@@ -348,7 +353,7 @@
                 </div>
               </div>
               <!-- Card 2 -->
-              <div class="review-card-horizontal text-light">
+              <div class="review-card-horizontal text-light" data-aos="fade-up" data-aos-delay="410" data-aos-duration="400" data-aos-once="true">
                 <img src="Media/Usuarios/usuario2.png" alt="Usuario 2" class="avatar">
                 <div class="review-content">
                   <div class="stars">★★★★★</div>
@@ -357,7 +362,7 @@
                 </div>
               </div>
               <!-- Card 3 -->
-              <div class="review-card-horizontal text-light">
+              <div class="review-card-horizontal text-light" data-aos="fade-up" data-aos-delay="450" data-aos-duration="400" data-aos-once="true">
                 <img src="Media/Usuarios/usuario3.png" alt="Usuario 3" class="avatar">
                 <div class="review-content">
                   <div class="stars">★★★★★</div>
@@ -378,18 +383,19 @@
         </div>
     </section>
 
-    <section id="GeekSwap" class="py-5 geekswap-section">
+    <section id="GeekSwap" class="py-5 geekswap-section"
+      data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
       <div class="container" style="background-image: url('Media/fondoBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <div class="row align-items-center">
           <!-- Columna izquierda: imagen entera ya armada -->
-          <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
             <div class="espaciado2">
               <img src="Media/Iconosbeneficios/Geekswap.png" alt="Mockup GeekSwap" class="img-fluid" />
             </div>
           </div>
 
           <!-- Columna derecha: texto y botones -->
-          <div class="col-12 col-lg-6 text-center text-lg-start">
+          <div class="col-12 col-lg-6 text-center text-lg-start" data-aos="fade-up" data-aos-delay="350" data-aos-duration="400" data-aos-once="true">
             <p class="fw-semibold text-uppercase small mb-2">
               Exclusivo para miembros de FirkiCaja
             </p>
@@ -409,22 +415,21 @@
     </section>
 
     <!-- Contenedor padre con fondo compartido -->
-    <div class="fondo-compartido">
+    <div class="fondo-compartido" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
       <!-- Sección Nosotros -->
-      <section id="nosotros" class="clientes-section text-center">
+      <section id="nosotros" class="clientes-section text-center"
+        data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
         <div class="container">
           <!-- Título y subtítulo -->
-          <h2 class="clientes-title">
+          <h2 class="clientes-title" data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-once="true">
             Modo friki <span class="texto-gradiente">activado</span>
           </h2>
-
-          <p class="clientes-subtitle" style="margin-top: -2rem;">
+          <p class="clientes-subtitle" style="margin-top: -2rem;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" data-aos-once="true">
             Recibir tu firkicaja es solo el principio. Mirá todo lo que podés vivir con cada entrega.
           </p>
-
           <!-- Cards -->
           <div class="row g-4 justify-content-center">
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="220" data-aos-duration="400" data-aos-once="true">
               <div class="cliente-card" style="background-image: url('Media/Umboxing.png');"></div>
               <div class="mt-3 px-2">
                 <h5 class="texto-gradiente">Unboxing en modo épico</h5>
@@ -432,7 +437,7 @@
                   otra vez.</p>
               </div>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="260" data-aos-duration="400" data-aos-once="true">
               <div class="cliente-card" style="background-image: url('Imagenes/manada.png');"></div>
               <div class="mt-3 px-2">
                 <h5 class="texto-gradiente">Compartilo con tu manada</h5>
@@ -440,7 +445,7 @@
                   cuando lo compartís.</p>
               </div>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" data-aos-once="true">
               <div class="cliente-card" style="background-image: url('Media/Coleccion.png');"></div>
               <div class="mt-3 px-2">
                 <h5 class="texto-gradiente">Dale vida a tu rincón</h5>
@@ -451,17 +456,18 @@
           </div>
         </div>
       </section>
-
       <!-- Segunda sección que comparte fondo -->
-      <section id="coleccion" class="espaciadoLeft" style="margin-bottom:100px  ;background-image: url('Media/fondoBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <section id="coleccion" class="espaciadoLeft"
+        style="margin-bottom:100px  ;background-image: url('Media/fondoBlue\ Grid\ Lines\ On\ Dark\ Background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;"
+        data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
         <div class="container">
           <div class="d-flex justify-content-between align-items-start flex-wrap flex-md-nowrap mt-5 middle-block">
-            <div class="left-text col-12 col-md-6 pe-md-5">
+            <div class="left-text col-12 col-md-6 pe-md-5" data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-once="true">
               <h2 class="headline-unique mb-0">
                 ¿Qué estás esperando para vivir la experiencia completa?
               </h2>
             </div>
-            <div class="right-text col-12 col-md-6 mt-4 mt-md-0">
+            <div class="right-text col-12 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" data-aos-once="true">
               <p class="unique-copy" style="margin-top: 15px; margin-bottom: 20px;">
                 Cada firkicaja es una historia en sí misma.<br />
                 Abrila, vivila, compartila… y que empiece tu colección.
@@ -474,36 +480,36 @@
     </div>
 
     <!-- MARCAS -->
-    <div class="slider mb-5">
+    <div class="slider mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
       <div class="slide-track">
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="120" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/marvel.svg" alt="Marvel" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="140" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/star-wars.svg" alt="Star Wars" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="160" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/5852cd5c58215f0354495f67.png" alt="Naruto" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="180" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/620135024babde0004ca4189 (1).png" alt="DC" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/pngwing.com (2).png" alt="Pokemon" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="220" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/marvel.svg" alt="Marvel" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="240" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/star-wars.svg" alt="Star Wars" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="260" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/5852cd5c58215f0354495f67.png" alt="Naruto" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="280" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/620135024babde0004ca4189 (1).png" alt="DC" class="img-fluid" style="max-height: 80px;">
         </div>
-        <div class="slide">
+        <div class="slide" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" data-aos-once="true">
           <img src="Imagenes/pngwing.com (2).png" alt="Pokemon" class="img-fluid" style="max-height: 80px;">
         </div>
           
@@ -511,15 +517,17 @@
     </div>
 
     <!-- FAQS: Preguntas frecuentes -->
-    <section id="faq" class="section-spacing container mt-5">
-      <p class="fw-semibold text-center small mb-2">
+    <section id="faq" class="section-spacing container mt-5"
+      data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
+      <p class="fw-semibold text-center small mb-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-once="true">
         ¿Querés preguntar algo?
       </p>
-      <h2 class="h5-custom text-center" style="color: #fff;">Preguntas Frecuentes</h2>
-
+      <h2 class="h5-custom text-center" style="color: #fff;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" data-aos-once="true">
+        Preguntas Frecuentes
+      </h2>
       <div class="row mt-5">
         <!-- Columna izquierda -->
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
           <div class="faq-item">
             <button class="faq-question d-flex justify-content-between align-items-center w-100"
               data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1"
@@ -568,7 +576,7 @@
         </div>
 
         <!-- Columna derecha -->
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="250" data-aos-duration="400" data-aos-once="true">
           <div class="faq-item">
             <button class="faq-question d-flex justify-content-between align-items-center w-100"
               data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4"
@@ -619,33 +627,34 @@
     <!-- /FAQS -->
 
     <!-- CONTACT FORM: Formulario de contacto -->
-    <section id="contacto" class="section-spacing text-center" style="background-image: url(Media/fondobottomBlue\ Grid\ Lines\ On\ Dark\ Background.png); ; background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <section id="contacto" class="section-spacing text-center"
+      style="background-image: url(Media/fondobottomBlue\ Grid\ Lines\ On\ Dark\ Background.png); ; background-repeat: no-repeat; background-size: cover; background-position: center center;"
+      data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
       <div class="container">
-        <h2 class="titulo-grandenegro">¿Querés contactarnos?</h2>
-      <p class="p-custom">Envía un mensaje directamente desde la web.</p>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Tu nombre">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Tu email">
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
-            </div>
-            <button type="submit" class="custom-button upper w-100">Enviar Mensaje</button>
-          </form>
+        <h2 class="titulo-grandenegro" data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-once="true">¿Querés contactarnos?</h2>
+        <p class="p-custom" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" data-aos-once="true">Envía un mensaje directamente desde la web.</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="250" data-aos-duration="400" data-aos-once="true">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Tu nombre">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Tu email">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+              </div>
+              <button type="submit" class="custom-button upper w-100">Enviar Mensaje</button>
+            </form>
+          </div>
         </div>
-      </div>
       </div>
     </section>
     <!-- /CONTACT FORM -->
 
     <!-- FOOTER: Pie de página -->
     <html lang="es">
-
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -653,9 +662,7 @@
       <link rel="stylesheet" href="footer.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
-
     <body>
-
       <footer class="footer">
         <div class="footer-columns">
           <div class="footer-column">
@@ -695,15 +702,10 @@
             <p class="payment-info">Métodos de pago aceptados</p>
           </div>
         </div>
-
-        <div class="footer-bottom">
-          <p>© 2025. Todos los derechos reservados. <a href="#">Términos y condiciones</a> <a href="#">Política de
-              Privacidad</a></p>
-        </div>
+        <p>© 2025. Todos los derechos reservados. <a href="#">Términos y condiciones</a> <a href="#">Política de
+            Privacidad</a></p>
       </footer>
-
     </body>
-
     </html>
     <!-- /FOOTER -->
 
@@ -840,6 +842,10 @@
         }
       }
     </style>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 
